@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    /* color: #222;
+    line-height: 1.6; */
+
+}
+
+.wrapper {
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.logo{
+    background-color: #c78c06;
+    padding-right: 80%;
+    display: block;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 70px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-button {
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #c78c06;
+    color: white;
+    font-size: 30px;
+    width: 80px;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+}
+
+.nav img {
+    background-color: #c78c06;
+    display: block;
+    width: 20%;
+}
+
+.nav ul {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.nav li {
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.nav a {
+    color: #c78c06;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.hero {
+    background-image: url("../images/main-banner.jpg");
+    align-content:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.hero > div {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80%;
+    align-content: center;
+}
+
+.hero button {
+    background-color: #c78c06;
+    color: white;
+    padding: 30px 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* About Us Section */
+
+#about-us{
+    padding: 20px 0;
+    background-color: #ffe6ac;
+    box-sizing: border-box;
+}
+
+#about-us img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about-us .text {
+    padding: 20px;
+}
+
+/* Service Section */
+
+#service {
+    background-color: #ffe6ac;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.service {
+    padding: 20px 0;
+}
+
+.service h2 {
+    margin-bottom: 20px;
+    font-size: 10px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service h3 {
+    margin: 10px 0;
+}
+
+.service p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.service button {
+    background-color: #c78c06;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/* Vision Section */
+
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 55px ;
+    color: white;
+}
+
+
+.vision button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Team Section */
+
+#Team {
+    background-color: #ffe6ac;
+    box-sizing: border-box;
+   
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 30px 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background-color: #c78c06;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* Hours Section */
+
+.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours th, .hours td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Location Section */
+
+.location iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Media query for screen sizes 760px and above */
+ @media (min-width: 760px) {
+    .nav ul {
+        justify-content: flex-end;
+    }
+
+    #about-us {
+        flex-direction: row;
+    }
+
+    #services {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .service {
+        align-items: flex-start;
+    }
+
+    #Team {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #Team div {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .contact form {
+        flex-direction: row;
+    }
+
+    .contact form input, .contact form textarea {
+        margin-right: 10px;
+    }
+
+    .contact form button {
+        margin-top: 0;
+    }
+} 
